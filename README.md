@@ -11,3 +11,7 @@ export GFDL_WORK=/home/acq19ct/Isca_work
 # directory for storing model output
 export GFDL_DATA=/home/acq19ct/Isca_data
 ```
+
+```{bash}
+diag.add_file('atmos_monthly', 30, 'days', time_units='days')
+```
