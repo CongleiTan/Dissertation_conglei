@@ -19,6 +19,6 @@ diag.add_file('atmos_monthly', 30, 'days', time_units='days')
 
 
 ```{bash}
-$cd $GFDL_BASE/exp/test_cases/frierson
-$python frierson_test_case_second.py
+(isca_env)$cd $GFDL_BASE/exp/test_cases/frierson
+(isca_env)$python frierson_test_case_second.py
 ```
