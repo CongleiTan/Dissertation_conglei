@@ -15,3 +15,10 @@ export GFDL_DATA=/home/acq19ct/Isca_data
 ```{bash}
 diag.add_file('atmos_monthly', 30, 'days', time_units='days')
 ```
+
+
+
+```{bash}
+$cd $GFDL_BASE/exp/test_cases/frierson
+$python frierson_test_case_second.py
+```
