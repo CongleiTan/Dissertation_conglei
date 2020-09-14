@@ -27,3 +27,7 @@ root = 'data/'
 nc_to_picture(root,1813)
 Resize_Picture(1801)
 ```
+
+```{bash}
+train_and_test(root_dir,seed)
+```
