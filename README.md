@@ -22,3 +22,8 @@ diag.add_file('atmos_monthly', 30, 'days', time_units='days')
 (isca_env)$cd $GFDL_BASE/exp/test_cases/frierson
 (isca_env)$python frierson_test_case_second.py
 ```
+```{bash}
+root = 'data/'
+nc_to_picture(root,1813)
+Resize_Picture(1801)
+```
