@@ -16,6 +16,13 @@ $ source activate isca_env
 (isca_env)$ cd src/extra/python
 (isca_env)$ pip install -r requirements.txt
 ```
+After that, you can install the isca python module in ”development mode”. This will
+allow you, if you want, to edit the src/extra/python/isca files and have those changes be
+used when you next run an Isca script.
+```{bash}
+(isca_env)$ pip install -e .
+```
+Compiling for the first time
 
 ```{bash}
 # directory of the Isca source code
@@ -27,7 +34,17 @@ export GFDL_WORK=/home/acq19ct/Isca_work
 # directory for storing model output
 export GFDL_DATA=/home/acq19ct/Isca_data
 ```
-
+At University of Sheffield, Isca is compiled using:
+• compilers/intel/15.0.3
+• mpi/intel/openmpi/1.10.0
+• libs/netcdf/4.3.2
+• mpif90
+• mpicc
+• h5pfc
+Before Isca is compiled, an environment is first configured which loads the specific compilers
+and libraries essential to build the code. This done by setting the environment variable
+GFDL ENV in your session.
+For example, on the EMPS workstations at Sheffield, I have done the following on my HPC
 ```{bash}
 diag.add_file('atmos_monthly', 30, 'days', time_units='days')
 ```
