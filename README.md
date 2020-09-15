@@ -1,5 +1,21 @@
 # Dissertation_conglei
-
+To start with, you’ll need a copy of the source code and there are two ways to for followers
+to realize it. You can fork the Isca repository to your own github username, or clone directly
+from the ExeClim group.
+```{bash}
+$ git clone https://github.com/ExeClim/Isca
+$ cd Isca
+```
+In the second step, you can find the python module in the src directory and you can
+install it using pip. We recommend that you can the Anaconda distribution and create an
+environment to do this (in the code below called ”isca env”)
+```{bash}
+$ conda create -n isca_env python ipython
+...
+$ source activate isca_env
+(isca_env)$ cd src/extra/python
+(isca_env)$ pip install -r requirements.txt
+```
 
 ```{bash}
 # directory of the Isca source code
@@ -20,7 +36,7 @@ diag.add_file('atmos_monthly', 30, 'days', time_units='days')
 
 ```{bash}
 (isca_env)$cd $GFDL_BASE/exp/test_cases/frierson
-(isca_env)$python frierson_test_case_second.py
+(isca_env)$python frierson_test_case.py
 ```
 ```{bash}
 root = 'data/'
