@@ -24,16 +24,6 @@ used when you next run an Isca script.
 ```
 Compiling for the first time
 
-```{bash}
-# directory of the Isca source code
-export GFDL_BASE=/home/acq19ct/Isca
-# "environment" configuration for Sheffield
-export GFDL_ENV=sheffield-bessemer
-# temporary working directory used in running the model
-export GFDL_WORK=/home/acq19ct/Isca_work
-# directory for storing model output
-export GFDL_DATA=/home/acq19ct/Isca_data
-```
 At University of Sheffield, Isca is compiled using:
 • compilers/intel/15.0.3
 • mpi/intel/openmpi/1.10.0
@@ -45,6 +35,17 @@ Before Isca is compiled, an environment is first configured which loads the spec
 and libraries essential to build the code. This done by setting the environment variable
 GFDL ENV in your session.
 For example, on the EMPS workstations at Sheffield, I have done the following on my HPC
+```{bash}
+# directory of the Isca source code
+export GFDL_BASE=/home/acq19ct/Isca
+# "environment" configuration for Sheffield
+export GFDL_ENV=sheffield-bessemer
+# temporary working directory used in running the model
+export GFDL_WORK=/home/acq19ct/Isca_work
+# directory for storing model output
+export GFDL_DATA=/home/acq19ct/Isca_data
+Running the model to obtain the subseasonal climate da
+```
 ```{bash}
 diag.add_file('atmos_monthly', 30, 'days', time_units='days')
 ```
