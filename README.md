@@ -73,7 +73,10 @@ root = 'data/'
 nc_to_picture(root,1813)
 Resize_Picture(1801)
 ```
-
+The following is to run the three deep learning methods. For the three techniques, they
+have same main function and it has two parameters:root dir and seed. If you attempt to
+reproduce the results of this paper, you only need to enter correct root and same seed provided
+by this paper
 ```{bash}
 train_and_test(root_dir,seed)
 ```
