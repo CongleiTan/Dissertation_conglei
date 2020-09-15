@@ -34,7 +34,7 @@ At University of Sheffield, Isca is compiled using:
 Before Isca is compiled, an environment is first configured which loads the specific compilers
 and libraries essential to build the code. This done by setting the environment variable
 GFDL ENV in your session.
-For example, on the EMPS workstations at Sheffield, I have done the following on my HPC
+For example, I have done the following on my HPC
 ```{bash}
 # directory of the Isca source code
 export GFDL_BASE=/home/acq19ct/Isca
