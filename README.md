@@ -22,7 +22,7 @@ used when you next run an Isca script.
 ```{bash}
 (isca_env)$ pip install -e .
 ```
-Compiling for the first time
+#Compiling for the first time
 
 At University of Sheffield, Isca is compiled using:
 • compilers/intel/15.0.3
@@ -44,7 +44,7 @@ export GFDL_ENV=sheffield-bessemer
 export GFDL_WORK=/home/acq19ct/Isca_work
 # directory for storing model output
 export GFDL_DATA=/home/acq19ct/Isca_data
-Running the model to obtain the subseasonal climate da
+#Running the model to obtain the subseasonal climate da
 ```
 ```{bash}
 diag.add_file('atmos_monthly', 30, 'days', time_units='days')
