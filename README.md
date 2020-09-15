@@ -22,7 +22,7 @@ used when you next run an Isca script.
 ```{bash}
 (isca_env)$ pip install -e .
 ```
-#Compiling for the first time
+# Compiling for the first time
 
 At University of Sheffield, Isca is compiled using:
 • compilers/intel/15.0.3
@@ -44,8 +44,14 @@ export GFDL_ENV=sheffield-bessemer
 export GFDL_WORK=/home/acq19ct/Isca_work
 # directory for storing model output
 export GFDL_DATA=/home/acq19ct/Isca_data
-#Running the model to obtain the subseasonal climate da
 ```
+# Running the model to obtain the subseasonal climate data
+When you have installed the isca python, you can try a compilation and run the frierson test
+case. In this project, we need to generate monthly average temperature and then you should
+go to Isca/exp/test cases/frierson/frierson test case.py file to change the parameters in the
+diag.add file() function like the following Figure.
+In the last step, you should go to the path of the executable file and then execute the
+frierson test case.py
 ```{bash}
 diag.add_file('atmos_monthly', 30, 'days', time_units='days')
 ```
@@ -56,6 +62,12 @@ diag.add_file('atmos_monthly', 30, 'days', time_units='days')
 (isca_env)$cd $GFDL_BASE/exp/test_cases/frierson
 (isca_env)$python frierson_test_case.py
 ```
+# How to run the three deep learning methods
+The first step is to convert the subseasonal temperature data to image from netCDF. We
+can find the nc to picture.py file to display the climte data by the image. The nc to picture
+function have two parameters:root and the number of netCDF file. For root, you should enter
+the parent pathway of netCDF file. The Resize Picture function is to resize the size and the
+color of the image.
 ```{bash}
 root = 'data/'
 nc_to_picture(root,1813)
